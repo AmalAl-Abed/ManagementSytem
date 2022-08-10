@@ -27,6 +27,14 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'no_vacation',
+        'no_sickLeave',
+        'no_WFH',
+        'birthday',
+        'login_time',
+        'logout_time',
+
+
     ];
 
     /**

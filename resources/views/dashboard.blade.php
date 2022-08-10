@@ -181,7 +181,7 @@ data-template="vertical-menu-template-free"
             </a>
             <ul class="menu-sub">
             <li class="menu-item">
-                <a href="birthdays" class="menu-link">
+                <a href="/users" class="menu-link">
                 <div data-i18n="Account">Upcoming Birthdays</div>
                 </a>
             </li>
@@ -192,26 +192,22 @@ data-template="vertical-menu-template-free"
 
                 {{-- categories --}}
                 <li class="menu-header small text-uppercase">
-                    <span class="menu-header-text">Categories</span>
+                    <span class="menu-header-text">clocking</span>
                     </li>
                     <li class="menu-item">
-                    <a href="javascript:void(0);" class="menu-link menu-toggle">
-                        <i class="menu-icon tf-icons bx bx-category"></i>
-                        <div data-i18n="Account Settings">Manage Timeclock</div>
+                    <a href="" class="menu-link menu-toggle">
+                        <i class="menu-icon tf-icons bx bx-time"></i>
+                        <div data-i18n="Account Settings">Manage clocking</div>
                     </a>
-                    {{-- <ul class="menu-sub">
+                    <ul class="menu-sub">
                         <li class="menu-item">
-                        <a href="{{route('categories.index')}}" class="menu-link">
-                            <div data-i18n="Account">View Categories</div>
+                        <a href="{{route('users.show',auth()->user()->id)}}" class="menu-link">
+                            <div data-i18n="Account">View Clock</div>
                         </a>
                         </li>
-                        <li class="menu-item">
-                            <a href="{{route('categories.create')}}" class="menu-link">
-                            <div data-i18n="Without navbar">Add Categories</div>
-                            </a>
-                        </li>
 
-                    </ul> --}}
+
+                    </ul>
                     </li>
 
 

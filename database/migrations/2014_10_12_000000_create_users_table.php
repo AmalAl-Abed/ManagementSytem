@@ -23,7 +23,9 @@ return new class extends Migration
             $table->integer('no_sickLeave')->default(7);
             $table->integer('no_WFH')->default(5);
             $table->rememberToken();
-            $table->date('birthday');
+            $table->date('birthday')->nullable();
+            $table->timestamp('login_time')->nullable();
+            $table->timestamp('logout_time')->nullable();
             $table->foreignId('current_team_id')->nullable();
             $table->string('profile_photo_path', 2048)->nullable();
             $table->timestamps();

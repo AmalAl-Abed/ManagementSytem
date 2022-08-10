@@ -54,7 +54,7 @@ class OffdayController extends Controller
                 $daysoff->reason = $request->reason;
                 $daysoff->save();
             }
-            return redirect('offdays')->with(['status' => 'your request has been submmited successfully.']);
+            return redirect('offdays')->with(['status' => 'your request is under review']);
         } elseif ((($request->holiday_type == "vacation") && ($request->no_of_days <= 7))) {
 
             if (offday::where('user_id', auth()->user()->id)) {
@@ -66,7 +66,7 @@ class OffdayController extends Controller
                 $daysoff->reason = $request->reason;
                 $daysoff->save();
             }
-            return redirect('offdays')->with(['status' => 'your request has been submmited successfully.']);
+            return redirect('offdays')->with(['status' => 'your request is under review']);
         } elseif ((($request->holiday_type == "work") && ($request->no_of_days <= 7))) {
 
             if (offday::where('user_id', auth()->user()->id)) {
@@ -78,7 +78,7 @@ class OffdayController extends Controller
                 $daysoff->reason = $request->reason;
                 $daysoff->save();
             }
-            return redirect('offdays')->with(['status' => 'your request has been submmited successfully.']);
+            return redirect('offdays')->with(['status' => 'your request is under review']);
         } else {
             return redirect('offdays')->with(['wrong' => 'you have exceeded the amount of availabe leaves.']);
         }

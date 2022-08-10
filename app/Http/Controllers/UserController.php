@@ -38,4 +38,12 @@ class UserController extends Controller
 
         return view('user.birthdays.index', compact('birthday'));
     }
+
+
+
+    public function show($id){
+         if(auth()->user()->id){
+        $userdata =User::find($id);
+      return view('user.clocking.index', compact('userdata'));
+    }}
 }

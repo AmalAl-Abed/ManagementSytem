@@ -19,9 +19,14 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+// Route::get('/clock', function () {
+//     return view('user.clocking.index');
+// });
 
 
-Route::resource('/birthdays', UserController::class);
+// Route::get('/clock/{$id}',[UserController::class,'showclock']);
+
+Route::resource('/users', UserController::class);
 
 Route::resource('/offdays', OffdayController::class);
 // Route::post('/login_clock', [ClockController::class, 'clock_in'])->name('login_clock');
