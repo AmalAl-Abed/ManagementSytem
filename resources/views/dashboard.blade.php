@@ -197,7 +197,7 @@ data-template="vertical-menu-template-free"
                     <li class="menu-item">
                     <a href="javascript:void(0);" class="menu-link menu-toggle">
                         <i class="menu-icon tf-icons bx bx-category"></i>
-                        <div data-i18n="Account Settings">Manage Categories</div>
+                        <div data-i18n="Account Settings">Manage Timeclock</div>
                     </a>
                     {{-- <ul class="menu-sub">
                         <li class="menu-item">
